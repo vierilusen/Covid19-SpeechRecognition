@@ -1,7 +1,7 @@
-let url = 'https://api.kawalcorona.com/indonesia/provinsi/';
+let proxyUrl = 'https://cors-anywhere.herokuapp.com/', url = "https://api.kawalcorona.com/indonesia/provinsi";
 
 //Fetching Data From Api
-fetch(url)
+fetch(proxyUrl + url)
   .then((resp) => {
     if (!resp.ok) {
       if (resp.status >= 400 && resp.status < 500) {
